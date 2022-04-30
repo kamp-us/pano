@@ -28,8 +28,6 @@ export const UpvoteButton: FC<UpvoteProps> = ({
     >
       <Triangle
         css={{
-          width: 24,
-          height: 24,
           color: isUpvoted ? "$amber9" : "$gray9",
           opacity: isVoting ? 0.5 : 1,
         }}
@@ -39,4 +37,7 @@ export const UpvoteButton: FC<UpvoteProps> = ({
   );
 };
 
-const Triangle = styled(TriangleUpIcon, {});
+const Triangle = styled(TriangleUpIcon, {
+  width: 24,
+  height: 24,
+});
